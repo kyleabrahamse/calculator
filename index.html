@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p class="inner-display">0</p>
+      <input type="text" class="display" disabled />
+      <div class="btn-container">
+        <button id="pink" onclick="clearDisplay()">AC</button>
+        <button id="pink" onclick="del()">C</button>
+        <button id="pink" onclick="divide()">/</button>
+        <button id="pink" onclick="multiply()">*</button>
+        <button onclick="displayAdd('7')">7</button>
+        <button onclick="displayAdd('8')">8</button>
+        <button onclick="displayAdd('9')">9</button>
+        <button id="pink" onclick="minus()">-</button>
+        <button onclick="displayAdd('4')">4</button>
+        <button onclick="displayAdd('5')">5</button>
+        <button onclick="displayAdd('6')">6</button>
+        <button id="pink" onclick="add()">+</button>
+        <button onclick="displayAdd('1')">1</button>
+        <button onclick="displayAdd('2')">2</button>
+        <button onclick="displayAdd('3')">3</button>
+        <button id="pink" class="equals" onclick="compute()">=</button>
+        <button onclick="displayAdd('00')">00</button>
+        <button class="0" onclick="displayAdd('0')">0</button>
+        <button onclick="displayAdd('.')">.</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
